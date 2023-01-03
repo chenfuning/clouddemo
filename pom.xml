@@ -17,6 +17,7 @@
         <module>springcloud-eureka-server-7100</module>
         <module>springcloud-eureka-client-7120</module>
         <module>springcloud-eureka-client-7130</module>
+        <module>springcloud-eureka-ribbonclient-7140</module>
     </modules>
 
     <properties>

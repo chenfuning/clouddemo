@@ -1,18 +1,17 @@
 server:
-  port: 7120
+  port: 7140
 
 spring:
   application:
-    name: springcloud-eureka-client-provider
+    name: springcloud-eureka-client-ribbon
 
 eureka:
-#  instance:
-#    instance-id: ${spring.application.name}:${server.port}
+  instance:
+    instance-id: ${spring.application.name}
   client:
     fetch-registry: true
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:7100/eureka/ #Eureka地址
-
 
 

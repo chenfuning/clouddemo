@@ -18,6 +18,7 @@
         <module>springcloud-eureka-client-7120</module>
         <module>springcloud-eureka-client-7130</module>
         <module>springcloud-eureka-ribbonclient-7140</module>
+        <module>springcloud-nacos-client-7150</module>
     </modules>
 
     <properties>
@@ -27,13 +28,23 @@
         <druid.version>1.2.8</druid.version>
         <spring-cloud.version>2020.0.1</spring-cloud.version>
         <kaptcha.version>0.0.9</kaptcha.version>
+        <spring-cloud-alibaba.version>2021.1</spring-cloud-alibaba.version>
     </properties>
     <dependencyManagement>
         <dependencies>
+            <!-- spring cloud 依赖 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- spring cloud alibaba 依赖 -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

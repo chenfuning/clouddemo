@@ -1,17 +1,17 @@
 server:
   port: 7150
 
-spring:
-  application:
-    name: springcloud-necos-client-provider
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
+#spring:
+#  application:
+#    name: springcloud-nacos-client-provider
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
 management:
   endpoint:
     web:
       exposure:
-        include: *
+        include: "*"
 
 

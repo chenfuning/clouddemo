@@ -19,6 +19,7 @@
         <module>springcloud-eureka-client-7130</module>
         <module>springcloud-eureka-ribbonclient-7140</module>
         <module>springcloud-nacos-client-7150</module>
+        <module>springcloud-nacos-client-7160</module>
     </modules>
 
     <properties>
